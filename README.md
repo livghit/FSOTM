@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center" style="font-size: 8rem;text-decoration: underline lightblue;color: lightblue">FSOTM</p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -7,60 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# FSOTM (Free Secure One-Time Messages)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+FSOTM is a secure platform for creating encrypted messages that self-destruct after a configurable time or usage. Designed for privacy-conscious communication, FSOTM offers various encryption methods and customizable settings, ensuring messages are accessible only under your specified conditions.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Flexible Message Types:**
+    - Send messages as plain text or upload files.
+    - Files are encrypted just like text messages, ensuring full security.
+- **Multiple Encryption Methods:** Choose from a variety of encryption algorithms to secure your messages.
+- **Configurable Message Settings:**
+    - Limit the number of readings.
+    - Restrict access by IP address.
+    - Set expiration times for messages.
+- **Generate Links or QR Codes:** Instantly create a shareable link or QR code for your encrypted message or file.
+- **Built-in Email Integration:** Send encrypted messages or files directly via email from the application.
+- **Self-Destructing Messages:** Messages are stored in the database only until their expiration or usage limits are reached. After that, they are permanently deleted.
 
-## Learning Laravel
+## How It Works
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. **Create a Message:** Write your message as text or upload a file. Select an encryption method for added security.
+2. **Customize Settings:** Configure the message's conditions:
+    - Specify the number of times it can be accessed.
+    - Define allowed IP addresses for access.
+    - Set the message's expiration time.
+3. **Generate Secure Link:** The platform generates a unique link or QR code for your encrypted message or file.
+4. **Share Securely:** Share the link or QR code via email using the built-in email functionality or through your preferred communication channel.
+5. **Message Self-Destructs:** Once the specified conditions are met, the message or file is automatically deleted from the database.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Benefits
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Privacy-First Communication:** Messages and files are encrypted and can only be accessed under your defined rules.
+- **One-Time Use:** Ideal for securely sharing sensitive text or files, as they self-destruct after use.
+- **Ease of Use:** Generate secure messages or file links quickly without needing advanced technical skills.
 
-## Laravel Sponsors
+## Use Cases
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Sharing passwords, documents, or sensitive information securely.
+- Communicating confidential information with limited access.
+- Ensuring time-bound access to critical data or files.
